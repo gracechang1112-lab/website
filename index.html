@@ -1,458 +1,208 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>深圳环球学旅教育科技有限公司 | Global EDU Offer Limited</title>
-  <meta name="description" content="深圳环球学旅教育科技有限公司（Global EDU Offer Limited）— 为来华外国人提供在华工作、学习、移民与生活服务；无犯罪记录证明、教育部学历认证、驻华使馆文书认证、来华留学与华人出国留学。">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    :root{ --brand:#0ea5a7; --dark:#0b1320; }
-    body{ font-family: 'Helvetica Neue', Arial, sans-serif; line-height:1.7; }
-    .navbar{ background-color: var(--dark); }
-    .navbar a{ color:#fff !important; }
-    .lang-btn{border:1px solid rgba(255,255,255,.25); border-radius:999px; padding:4px 10px; margin-left:8px; color:#fff; background:transparent}
-    .lang-btn.active{ background:var(--brand); border-color:var(--brand); }
-    .hero{ background:#f4fafa; padding:80px 0; text-align:center; }
-    .divider{ width:56px; height:3px; background:var(--brand); border-radius:3px; margin:12px auto 24px; }
-    .btn-brand{ background:var(--brand); border-color:var(--brand); }
-    .btn-brand:hover{ background:#109198; border-color:#109198; }
-    .section{ padding:60px 0; }
-    footer{ background:#f3f4f6; text-align:center; padding:20px 0; }
-    /* bilingual toggle */
-    [data-i18n]{display:none}
-    :root.lang-zh [data-i18n="zh"]{display:block}
-    :root.lang-en [data-i18n="en"]{display:block}
-    /* modal */
-    .modal-body img{max-width:320px; width:100%; height:auto; border-radius:12px}
-    /* advantages list */
-    .adv-list{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; max-width:980px; margin:10px auto 20px}
-    .adv-item{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:10px}
-    @media (max-width:992px){ .adv-list{grid-template-columns:repeat(2,1fr);} }
-    @media (max-width:540px){ .adv-list{grid-template-columns:1fr;} }
-    /* testimonials */
-    .quote{font-size:1.05rem}
-    .quote::before{content:"“"; font-size:2rem; line-height:0; vertical-align:-.4rem; color:#94a3b8; margin-right:2px}
-    .quote::after{content:"”"; font-size:2rem; line-height:0; vertical-align:-.4rem; color:#94a3b8; margin-left:2px}
-    .stars{color:#f59e0b}
-    /* message form card */
-    .shadow-card{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:22px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首页 | Global EDU Offer Limited</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-        <span data-i18n="zh">深圳环球学旅教育科技有限公司</span>
-        <span data-i18n="en">Global EDU Offer Limited</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home" data-i18n="zh">首页</a><a class="nav-link" href="#home" data-i18n="en">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services" data-i18n="zh">服务</a><a class="nav-link" href="#services" data-i18n="en">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="zh">常见问题</a><a class="nav-link" href="#faq" data-i18n="en">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#reviews" data-i18n="zh">客户评价</a><a class="nav-link" href="#reviews" data-i18n="en">Reviews</a></li>
-          <li class="nav-item"><a class="nav-link" href="#message" data-i18n="zh">留言</a><a class="nav-link" href="#message" data-i18n="en">Message</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="zh">联系</a><a class="nav-link" href="#contact" data-i18n="en">Contact</a></li>
-        </ul>
-        <div class="ms-3">
-          <button class="lang-btn active" id="btn-zh">中文</button>
-          <button class="lang-btn" id="btn-en">EN</button>
-        </div>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span data-i18n="zh">深圳环球学旅教育科技有限公司</span>
+      <span data-i18n="en">Global EDU Offer Limited</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active-link" data-file="index.html" href="index.html" data-i18n="zh">首页</a><a class="nav-link active-link" data-file="index.html" href="index.html" data-i18n="en">Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="services.html" href="services.html" data-i18n="zh">服务</a><a class="nav-link" data-file="services.html" href="services.html" data-i18n="en">Services</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="cases.html" href="cases.html" data-i18n="zh">案例</a><a class="nav-link" data-file="cases.html" href="cases.html" data-i18n="en">Cases</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="process.html" href="process.html" data-i18n="zh">流程图</a><a class="nav-link" data-file="process.html" href="process.html" data-i18n="en">Process</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="downloads.html" href="downloads.html" data-i18n="zh">下载中心</a><a class="nav-link" data-file="downloads.html" href="downloads.html" data-i18n="en">Downloads</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="about.html" href="about.html" data-i18n="zh">关于</a><a class="nav-link" data-file="about.html" href="about.html" data-i18n="en">About</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="faq.html" href="faq.html" data-i18n="zh">常见问题</a><a class="nav-link" data-file="faq.html" href="faq.html" data-i18n="en">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="reviews.html" href="reviews.html" data-i18n="zh">客户评价</a><a class="nav-link" data-file="reviews.html" href="reviews.html" data-i18n="en">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" data-file="contact.html" href="contact.html" data-i18n="zh">联系</a><a class="nav-link" data-file="contact.html" href="contact.html" data-i18n="en">Contact</a></li>
+      </ul>
+      <div class="ms-3">
+        <button class="lang-btn" id="btn-zh">中文</button>
+        <button class="lang-btn" id="btn-en">EN</button>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h1 class="fw-bold" data-i18n="zh">深圳环球学旅教育科技有限公司</h1>
-      <h1 class="fw-bold" data-i18n="en">Global EDU Offer Limited</h1>
-
-      <!-- Brand + Services -->
-      <p class="lead" data-i18n="zh">
-        我们专注为来华外国人提供在中国工作、学习、移民及生活相关的专业建议与协助：无犯罪记录证明、教育部学历认证、驻华使馆文书认证、来华留学与华人出国留学。
-      </p>
-      <p class="lead" data-i18n="en">
-        We provide professional support for foreigners in China across work, study, immigration, and daily life: police clearance in China, MOE degree verification, embassy document legalization, study in China, and study‑abroad services for Chinese citizens.
-      </p>
-
-      <!-- Advantages -->
-      <div class="adv-list">
-        <div class="adv-item" data-i18n="zh">🕒 <strong>时效快</strong> — 高效办理，缩短等待时间</div>
-        <div class="adv-item" data-i18n="zh">🌍 <strong>覆盖多国</strong> — 服务覆盖主要国家与地区</div>
-        <div class="adv-item" data-i18n="zh">👥 <strong>一对一顾问</strong> — 全程专属顾问指导</div>
-        <div class="adv-item" data-i18n="zh">📝 <strong>全流程代办</strong> — 减少客户繁琐操作</div>
-
-        <div class="adv-item" data-i18n="en">🕒 <strong>Fast Processing</strong> — Shorten waiting time with efficient handling</div>
-        <div class="adv-item" data-i18n="en">🌍 <strong>Global Coverage</strong> — Serving major countries and regions worldwide</div>
-        <div class="adv-item" data-i18n="en">👥 <strong>Dedicated Consultant</strong> — One‑on‑one professional guidance</div>
-        <div class="adv-item" data-i18n="en">📝 <strong>Full‑service Handling</strong> — Reduce paperwork and hassle</div>
-      </div>
-
-      <div class="divider"></div>
-      <a href="#message" class="btn btn-light btn-lg me-2" data-i18n="zh">在线留言</a>
-      <a href="#message" class="btn btn-light btn-lg me-2" data-i18n="en">Leave a Message</a>
-      <a href="#contact" class="btn btn-brand btn-lg" data-i18n="zh">联系我</a>
-      <a href="#contact" class="btn btn-brand btn-lg" data-i18n="en">Get in Touch</a>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1 class="fw-bold" data-i18n="zh">跨境认证与教育服务，一站式办妥</h1>
+    <h1 class="fw-bold" data-i18n="en">Cross‑border Legalization & Education, Done in One Place</h1>
+    <p class="lead" data-i18n="zh">海牙/领事、无犯罪、香港委托公证人、学历认证、来华/出国留学。清晰步骤、透明时效，让你立刻知道下一步。</p>
+    <p class="lead" data-i18n="en">Apostille/Consular, PCC, HK CAAO, MOE verification, Study in/out of China. Clear steps, transparent timeline—know exactly what’s next.</p>
+    <div class="divider"></div>
+    <a href="services.html" class="btn btn-brand btn-lg me-2" data-i18n="zh">查看服务</a>
+    <a href="services.html" class="btn btn-brand btn-lg me-2" data-i18n="en">Explore Services</a>
+    <a href="contact.html" class="btn btn-outline-light btn-lg" style="border-color:#fff;color:#fff" data-i18n="zh">获取清单</a>
+    <a href="contact.html" class="btn btn-outline-light btn-lg" style="border-color:#fff;color:#fff" data-i18n="en">Get a Checklist</a>
+    <div class="trust">
+      <span class="pill" data-i18n="zh"><i class="fa-regular fa-circle-check me-1"></i>合规优先</span>
+      <span class="pill" data-i18n="en"><i class="fa-regular fa-circle-check me-1"></i>Compliance‑first</span>
+      <span class="pill" data-i18n="zh"><i class="fa-regular fa-clock me-1"></i>透明时效</span>
+      <span class="pill" data-i18n="en"><i class="fa-regular fa-clock me-1"></i>Transparent ETA</span>
+      <span class="pill" data-i18n="zh"><i class="fa-solid fa-user-tie me-1"></i>一对一顾问</span>
+      <span class="pill" data-i18n="en"><i class="fa-solid fa-user-tie me-1"></i>1:1 Consultant</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Services -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="text-center" data-i18n="zh">核心服务</h2>
-      <h2 class="text-center" data-i18n="en">Core Services</h2>
-      <div class="divider"></div>
-      <div class="row g-3 text-center">
-        <div class="col-md-4">
-          <div class="p-3 border rounded-3 h-100">
-            <div class="fs-3 mb-2"><i class="fa-regular fa-file-shield"></i></div>
-            <strong data-i18n="zh">在华无犯罪记录证明</strong>
-            <strong data-i18n="en">Police Clearance in China</strong>
-            <p class="mb-0" data-i18n="zh">出入境、工作、移民等用途。</p>
-            <p class="mb-0" data-i18n="en">For immigration, employment, and compliance.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border rounded-3 h-100">
-            <div class="fs-3 mb-2"><i class="fa-regular fa-certificate"></i></div>
-            <strong data-i18n="zh">教育部学历认证</strong>
-            <strong data-i18n="en">MOE Degree Verification</strong>
-            <p class="mb-0" data-i18n="zh">用于来华工作申请与资质核验。</p>
-            <p class="mb-0" data-i18n="en">For work applications and credential checks.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-3 border rounded-3 h-100">
-            <div class="fs-3 mb-2"><i class="fa-regular fa-stamp"></i></div>
-            <strong data-i18n="zh">驻华使馆文书认证</strong>
-            <strong data-i18n="en">Embassy Legalization</strong>
-            <p class="mb-0" data-i18n="zh">多国使领馆公证/认证全流程。</p>
-            <p class="mb-0" data-i18n="en">End‑to‑end document legalization in China.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3 border rounded-3 h-100">
-            <div class="fs-3 mb-2"><i class="fa-regular fa-graduation-cap"></i></div>
-            <strong data-i18n="zh">外国人来华留学</strong>
-            <strong data-i18n="en">Study in China</strong>
-            <p class="mb-0" data-i18n="zh">院校咨询、材料指导、申请协助。</p>
-            <p class="mb-0" data-i18n="en">Programs, guidance, and application support.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3 border rounded-3 h-100">
-            <div class="fs-3 mb-2"><i class="fa-regular fa-plane-departure"></i></div>
-            <strong data-i18n="zh">华人出国留学</strong>
-            <strong data-i18n="en">Study Abroad for Chinese</strong>
-            <p class="mb-0" data-i18n="zh">择校规划、文书与签证支持。</p>
-            <p class="mb-0" data-i18n="en">School selection, essays, and visa support.</p>
-          </div>
+<!-- HIGHLIGHTS -->
+<section class="section">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-3">
+        <div class="shadow-card h-100 text-center">
+          <div class="mb-2"><i class="fa-solid fa-file-circle-check"></i></div>
+          <h6 data-i18n="zh">认证与加注</h6><h6 data-i18n="en">Legalization</h6>
+          <p class="light" data-i18n="zh">海牙/领事、香港委托公证人，一站式。</p>
+          <p class="light" data-i18n="en">Apostille/Consular, HK CAAO—end‑to‑end.</p>
+          <a class="link-arrow" href="services.html"><span data-i18n="zh">了解更多</span><span data-i18n="en">Learn more</span> <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section bg-light">
-    <div class="container">
-      <h2 class="text-center" data-i18n="zh">常见问题</h2>
-      <h2 class="text-center" data-i18n="en">FAQ</h2>
-      <div class="divider"></div>
-
-      <div class="accordion" id="faqAccZh" data-i18n="zh">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q1zh"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1zh">办理周期一般多久？</button></h2>
-          <div id="a1zh" class="accordion-collapse collapse show" data-bs-parent="#faqAccZh">
-            <div class="accordion-body">不同国家/用途有所差异。常见材料齐全时，通常 3–10 个工作日；如需使馆认证或第三方核验，时间会相应延长。</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q2zh"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2zh">需要准备哪些材料？</button></h2>
-          <div id="a2zh" class="accordion-collapse collapse" data-bs-parent="#faqAccZh">
-            <div class="accordion-body">护照首页、在华签证/居留许可、申请表、近照；若涉及学历/文书认证，需提供原件或扫描件。我们会在评估后给出清单。</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q3zh"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3zh">可以全程线上办理吗？</button></h2>
-          <div id="a3zh" class="accordion-collapse collapse" data-bs-parent="#faqAccZh">
-            <div class="accordion-body">大多数业务支持线上办理与快递寄回；个别城市或使馆环节可能要求线下递交或面签，我们会提前说明并提供代办方案。</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q4zh"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4zh">费用如何计算？</button></h2>
-          <div id="a4zh" class="accordion-collapse collapse" data-bs-parent="#faqAccZh">
-            <div class="accordion-body">费用由政府/使馆规费 + 服务费构成。确认材料后我们会提供书面报价，不额外收取隐性费用。</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q5zh"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5zh">是否支持加急？</button></h2>
-          <div id="a5zh" class="accordion-collapse collapse" data-bs-parent="#faqAccZh">
-            <div class="accordion-body">部分城市与使馆支持加急渠道。我们会根据你的截止日期给出最合适的加急方案与时效预估。</div>
-          </div>
+      <div class="col-md-3">
+        <div class="shadow-card h-100 text-center">
+          <div class="mb-2"><i class="fa-solid fa-fingerprint"></i></div>
+          <h6 data-i18n="zh">无犯罪记录</h6><h6 data-i18n="en">Police Clearance</h6>
+          <p class="light" data-i18n="zh">全球 PCC 与在华无犯罪，支持指纹卡/授权。</p>
+          <p class="light" data-i18n="en">Global & China PCC; fingerprint cards & e‑auth.</p>
+          <a class="link-arrow" href="services.html"><span data-i18n="zh">了解更多</span><span data-i18n="en">Learn more</span> <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
-
-      <div class="accordion" id="faqAccEn" data-i18n="en">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q1en"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1en">How long does it take?</button></h2>
-          <div id="a1en" class="accordion-collapse collapse show" data-bs-parent="#faqAccEn">
-            <div class="accordion-body">Timelines vary by country and purpose. With complete documents, most cases take 3–10 business days; embassy legalization or third‑party checks may extend this.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q2en"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2en">What documents are required?</button></h2>
-          <div id="a2en" class="accordion-collapse collapse" data-bs-parent="#faqAccEn">
-            <div class="accordion-body">Passport bio page, China visa/residence permit, application form, photo; originals or scans for degree/document verification. We’ll share a checklist after assessment.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q3en"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3en">Is online processing available?</button></h2>
-          <div id="a3en" class="accordion-collapse collapse" data-bs-parent="#faqAccEn">
-            <div class="accordion-body">Most services can be handled fully online with courier return. Some cities/embassies require in‑person submission or interviews—we’ll advise and arrange alternatives.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q4en"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4en">How is pricing structured?</button></h2>
-          <div id="a4en" class="accordion-collapse collapse" data-bs-parent="#faqAccEn">
-            <div class="accordion-body">Fees = government/embassy charges + our service fee. After confirming documents, we provide a written quote with no hidden costs.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="q5en"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5en">Do you offer expedited options?</button></h2>
-          <div id="a5en" class="accordion-collapse collapse" data-bs-parent="#faqAccEn">
-            <div class="accordion-body">Yes, for certain cities and embassies. We’ll propose the best expedited plan based on your deadline with a realistic timeline estimate.</div>
-          </div>
+      <div class="col-md-3">
+        <div class="shadow-card h-100 text-center">
+          <div class="mb-2"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h6 data-i18n="zh">学历与教育</h6><h6 data-i18n="en">Education</h6>
+          <p class="light" data-i18n="zh">教育部学历认证，来华/出国留学申请。</p>
+          <p class="light" data-i18n="en">MOE verification, study‑in/out of China.</p>
+          <a class="link-arrow" href="services.html"><span data-i18n="zh">了解更多</span><span data-i18n="en">Learn more</span> <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="reviews" class="section">
-    <div class="container">
-      <h2 class="text-center" data-i18n="zh">客户评价</h2>
-      <h2 class="text-center" data-i18n="en">Client Reviews</h2>
-      <div class="divider"></div>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="border rounded-3 h-100 p-3 bg-white">
-            <div class="stars mb-2" aria-label="5 stars">★★★★★</div>
-            <p class="quote mb-3" data-i18n="zh">全程在线沟通，进度透明，证书比预期更快拿到。</p>
-            <p class="quote mb-3" data-i18n="en">Smooth online process with clear updates—received the document earlier than expected.</p>
-            <div class="small text-muted" data-i18n="zh">— M. R., 德国</div>
-            <div class="small text-muted" data-i18n="en">— M. R., Germany</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="border rounded-3 h-100 p-3 bg-white">
-            <div class="stars mb-2" aria-label="5 stars">★★★★★</div>
-            <p class="quote mb-3" data-i18n="zh">顾问非常专业，材料清单一步到位，省了很多时间。</p>
-            <p class="quote mb-3" data-i18n="en">Professional guidance and a precise checklist saved me a lot of time.</p>
-            <div class="small text-muted" data-i18n="zh">— A. S., 西班牙</div>
-            <div class="small text-muted" data-i18n="en">— A. S., Spain</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="border rounded-3 h-100 p-3 bg-white">
-            <div class="stars mb-2" aria-label="5 stars">★★★★★</div>
-            <p class="quote mb-3" data-i18n="zh">加急方案靠谱，按时完成认证，顺利提交工作申请。</p>
-            <p class="quote mb-3" data-i18n="en">The expedited plan worked perfectly—finished legalization on time for my job application.</p>
-            <div class="small text-muted" data-i18n="zh">— K. T., 泰国</div>
-            <div class="small text-muted" data-i18n="en">— K. T., Thailand</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Message (Contact Form) -->
-  <section id="message" class="section bg-light">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <h2 data-i18n="zh">在线客服</h2>
-          <h2 data-i18n="en">Online Support</h2>
-          <div class="divider"></div>
-          <p data-i18n="zh">点击右下角聊天按钮可使用即时聊天工具（工作时间：工作日 9:00–18:00）。也可以在此留言，我们会尽快回复你。</p>
-          <p data-i18n="en">Use the chat button at the bottom‑right during business hours (Mon–Fri 9:00–18:00), or leave us a message below and we’ll get back to you shortly.</p>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2"><i class="fa-regular fa-envelope me-2"></i> gracechang_7@163.com</li>
-            <li class="mb-2"><i class="fa-brands fa-weixin me-2"></i> az7552</li>
-            <li class="mb-2"><i class="fa-brands fa-whatsapp me-2"></i> +66 99 363 3721</li>
-          </ul>
-        </div>
-        <div class="col-lg-7">
-          <div class="shadow-card">
-            <h3 class="h4 mb-3" data-i18n="zh">给我们留言</h3>
-            <h3 class="h4 mb-3" data-i18n="en">Leave a Message</h3>
-            <div id="formAlert" class="alert d-none" role="alert"></div>
-            <form id="contactForm" method="POST" action="https://formsubmit.co/gracechang_7@163.com" aria-label="contact form">
-              <input type="hidden" name="_subject" value="Website Message">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://gracechang1112-lab.github.io/website/?sent=1">
-              <div class="mb-3">
-                <label class="form-label" data-i18n="zh">姓名*</label>
-                <label class="form-label" data-i18n="en">Name*</label>
-                <input name="name" type="text" class="form-control" required>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Email*</label>
-                <input name="email" type="email" class="form-control" required>
-                <input type="hidden" name="_replyto" value="">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" data-i18n="zh">您的留言*</label>
-                <label class="form-label" data-i18n="en">Your Message*</label>
-                <textarea name="message" rows="5" class="form-control" required></textarea>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" data-i18n="zh">验证问题：2 + 3 = ?</label>
-                <label class="form-label" data-i18n="en">Anti‑spam: 2 + 3 = ?</label>
-                <input id="captcha" type="number" class="form-control" required>
-              </div>
-              <input type="text" name="_honey" style="display:none">
-              <button class="btn btn-brand" type="submit" data-i18n="zh">提交</button>
-              <button class="btn btn-brand" type="submit" data-i18n="en">Submit</button>
-            </form>
-            <p class="text-muted small mt-3" data-i18n="zh">我们仅用于回复你的咨询，不会对外共享你的信息。</p>
-            <p class="text-muted small mt-3" data-i18n="en">We only use your info to respond to your inquiry and won’t share it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="text-center" data-i18n="zh">联系</h2>
-      <h2 class="text-center" data-i18n="en">Contact</h2>
-      <div class="divider"></div>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="list-group list-group-flush">
-            <a class="list-group-item d-flex align-items-center" href="mailto:gracechang_7@163.com" rel="noopener">
-              <i class="fa-regular fa-envelope me-3"></i>
-              <span>gracechang_7@163.com</span>
-            </a>
-            <div class="list-group-item d-flex align-items-center">
-              <i class="fa-brands fa-weixin me-3"></i>
-              <span>az7552</span>
-              <button class="btn btn-sm btn-brand ms-auto" data-bs-toggle="modal" data-bs-target="#qrModal" data-i18n="zh" aria-label="打开微信二维码">查看二维码</button>
-              <button class="btn btn-sm btn-brand ms-auto" data-bs-toggle="modal" data-bs-target="#qrModal" data-i18n="en" aria-label="Open WeChat QR">View QR</button>
-            </div>
-            <a class="list-group-item d-flex align-items-center" href="https://wa.me/66993633721" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp me-3"></i>
-              <span>+66 99 363 3721</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- QR Modal -->
-  <div class="modal fade" id="qrModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" data-i18n="zh">微信二维码</h5>
-          <h5 class="modal-title" data-i18n="en">WeChat QR Code</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <img src="wechat-qrcode.jpg" alt="WeChat QR — az7552">
+      <div class="col-md-3">
+        <div class="shadow-card h-100 text-center">
+          <div class="mb-2"><i class="fa-solid fa-paper-plane"></i></div>
+          <h6 data-i18n="zh">翻译与递送</h6><h6 data-i18n="en">Translation & Courier</h6>
+          <p class="light" data-i18n="zh">多语翻译、公证与国际快递回寄。</p>
+          <p class="light" data-i18n="en">Multi‑language translation, notarization & courier.</p>
+          <a class="link-arrow" href="downloads.html"><span data-i18n="zh">下载清单</span><span data-i18n="en">Get checklist</span> <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p class="mb-0">&copy; <span id="y"></span> <span data-i18n="zh">深圳环球学旅教育科技有限公司</span><span data-i18n="en">Global EDU Offer Limited</span></p>
-  </footer>
+<!-- QUICK STATS -->
+<section class="section" style="padding-top:30px">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 stat"><div class="n">8+</div><div data-i18n="zh">核心业务</div><div data-i18n="en">core services</div></div>
+      <div class="col-md-3 stat"><div class="n">30+</div><div data-i18n="zh">覆盖国家/地区</div><div data-i18n="en">countries/regions</div></div>
+      <div class="col-md-3 stat"><div class="n">1:1</div><div data-i18n="zh">顾问服务</div><div data-i18n="en">consulting</div></div>
+      <div class="col-md-3 stat"><div class="n">100%</div><div data-i18n="zh">费用透明</div><div data-i18n="en">price transparency</div></div>
+    </div>
+  </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-    // Language toggle
-    const root = document.documentElement;
-    function setLang(lang){
-      root.classList.remove('lang-zh','lang-en');
-      root.classList.add(lang==='en' ? 'lang-en' : 'lang-zh');
-      try{ localStorage.setItem('lang', lang); }catch(e){}
-      const zh = document.getElementById('btn-zh'), en = document.getElementById('btn-en');
-      if(zh && en){ zh.classList.toggle('active', lang!=='en'); en.classList.toggle('active', lang==='en'); }
-    }
-    setLang((()=>{ try{ return localStorage.getItem('lang'); }catch(e){ return null } })() || 'zh');
-    document.addEventListener('click', e=>{
-      if(e.target && e.target.id==='btn-zh') setLang('zh');
-      if(e.target && e.target.id==='btn-en') setLang('en');
-    });
+<!-- SIMPLE STEPS -->
+<section class="section">
+  <div class="container">
+    <div class="row g-3 align-items-stretch">
+      <div class="col-lg-6">
+        <div class="shadow-card h-100">
+          <h4 data-i18n="zh">3 步完成 · 清晰可执行</h4>
+          <h4 data-i18n="en">3 Simple Steps</h4>
+          <div class="step"><span class="num">1</span><div><b data-i18n="zh">评估：</b><b data-i18n="en">Assess:</b> <span data-i18n="zh">用途/国家/材料现状，确定路径与时效。</span><span data-i18n="en">purpose/jurisdiction/docs → route & ETA.</span></div></div>
+          <div class="step"><span class="num">2</span><div><b data-i18n="zh">准备：</b><b data-i18n="en">Prepare:</b> <span data-i18n="zh">发送清单与模板，辅导指纹/翻译/公证。</span><span data-i18n="en">checklists & templates; guide fingerprint/translation/notary.</span></div></div>
+          <div class="step"><span class="num">3</span><div><b data-i18n="zh">交付：</b><b data-i18n="en">Deliver:</b> <span data-i18n="zh">先发扫描，原件国际快递回寄。</span><span data-i18n="en">scans first; originals shipped back.</span></div></div>
+          <a class="btn btn-brand mt-2" href="process.html" data-i18n="zh">查看流程图</a>
+          <a class="btn btn-brand mt-2" href="process.html" data-i18n="en">See flow</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="shadow-card h-100">
+          <h4 data-i18n="zh">为什么选择我们</h4>
+          <h4 data-i18n="en">Why Choose Us</h4>
+          <ul class="mb-0">
+            <li data-i18n="zh">合规优先 · 降低退件与返工风险</li>
+            <li data-i18n="en">Compliance‑first · reduced rework risk</li>
+            <li data-i18n="zh">时间透明 · 支持加急与节点跟踪</li>
+            <li data-i18n="en">Transparent ETA · expedite & milestone tracking</li>
+            <li data-i18n="zh">一对一顾问 · 清单梳理与材料校对</li>
+            <li data-i18n="en">1:1 consultant · checklists & review</li>
+            <li data-i18n="zh">全球网络 · 覆盖美加英欧澳新与东南亚</li>
+            <li data-i18n="en">Global network · US/CA/UK/EU/AUS/NZ/SEA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    // Form: AJAX first, fallback to POST
-    const form = document.getElementById('contactForm');
-    const alertBox = document.getElementById('formAlert');
-    const emailField = form.querySelector('input[name="email"]');
-    const replyToHidden = form.querySelector('input[name="_replyto"]');
-    emailField.addEventListener('input', ()=>{ replyToHidden.value = emailField.value; });
+<!-- REVIEWS TEASER -->
+<section class="section" style="padding-top:30px">
+  <div class="container">
+    <h4 class="text-center" data-i18n="zh">真实体验 · 来自客户的评价</h4>
+    <h4 class="text-center" data-i18n="en">What Clients Say</h4>
+    <div class="divider"></div>
+    <div class="row g-3">
+      <div class="col-md-4"><div class="review h-100"><div class="fw-semibold" data-i18n="zh">美国客户 · 就业签证</div><div class="fw-semibold" data-i18n="en">US Client · Work Visa</div><div class="mt-2" data-i18n="zh">“清单清晰，按期拿到海牙件。”</div><div class="mt-2" data-i18n="en">“Clear checklist; apostille delivered on time.”</div></div></div>
+      <div class="col-md-4"><div class="review h-100"><div class="fw-semibold" data-i18n="zh">在华外籍教师</div><div class="fw-semibold" data-i18n="en">Foreign Teacher in China</div><div class="mt-2" data-i18n="zh">“学历认证与入职衔接顺畅。”</div><div class="mt-2" data-i18n="en">“MOE verification aligned well with onboarding.”</div></div></div>
+      <div class="col-md-4"><div class="review h-100"><div class="fw-semibold" data-i18n="zh">企业 HR</div><div class="fw-semibold" data-i18n="en">Corporate HR</div><div class="mt-2" data-i18n="zh">“批量件处理规范，放心。”</div><div class="mt-2" data-i18n="en">“Batch processing was standardized and reliable.”</div></div></div>
+    </div>
+    <div class="text-center mt-3">
+      <a class="btn btn-brand" href="reviews.html" data-i18n="zh">查看更多评价</a>
+      <a class="btn btn-brand" href="reviews.html" data-i18n="en">See more reviews</a>
+    </div>
+  </div>
+</section>
 
-    function t(key){
-      const isEn = document.documentElement.classList.contains('lang-en');
-      const dict = {
-        success_zh: '提交成功，我们会尽快联系你。（若首次提交，请留意邮箱内来自 FormSubmit 的验证邮件）',
-        success_en: 'Thanks! Your message has been sent. (For the first submission, please check your inbox for a FormSubmit verification email)',
-        captcha_zh: '请正确填写验证问题（2 + 3 = 5）。',
-        captcha_en: 'Please answer the anti‑spam question correctly (2 + 3 = 5).',
-        error_zh: '提交失败，已切换备用通道。若仍无结果，请通过邮箱/微信联系。',
-        error_en: 'Submission failed; switched to fallback. If it still fails, please contact us via email/WeChat.'
-      };
-      return dict[key + (isEn ? '_en' : '_zh')];
-    }
-    form.addEventListener('submit', async (e)=>{
-      // captcha
-      const cap = document.getElementById('captcha').value;
-      if(String(cap).trim() !== '5'){
-        e.preventDefault();
-        alertBox.className = 'alert alert-warning';
-        alertBox.textContent = t('captcha');
-        return;
-      }
-      // try AJAX
-      e.preventDefault();
-      const fd = new FormData(form);
-      try{
-        const res = await fetch('https://formsubmit.co/ajax/gracechang_7@163.com', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: fd
-        });
-        if(res.ok){
-          form.reset();
-          alertBox.className = 'alert alert-success';
-          alertBox.textContent = t('success');
-        }else{
-          alertBox.className = 'alert alert-warning';
-          alertBox.textContent = t('error');
-          form.removeEventListener('submit', arguments.callee);
-          form.submit();
-        }
-      }catch(err){
-        alertBox.className = 'alert alert-warning';
-        alertBox.textContent = t('error');
-        form.removeEventListener('submit', arguments.callee);
-        form.submit();
-      }
-    });
-  </script>
+<!-- FAQ TEASER + CTA BAND -->
+<section class="section" style="padding-top:30px">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="shadow-card h-100">
+          <h5 data-i18n="zh">常见问题</h5><h5 data-i18n="en">FAQ</h5>
+          <ul class="mb-0">
+            <li><a href="faq.html" class="link-arrow"><span data-i18n="zh">海牙与领事有什么区别？</span><span data-i18n="en">Apostille vs Consular?</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="faq.html" class="link-arrow"><span data-i18n="zh">无犯罪如何办理？</span><span data-i18n="en">How to get a PCC?</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="faq.html" class="link-arrow"><span data-i18n="zh">是否支持加急？</span><span data-i18n="en">Do you expedite?</span> <i class="fa-solid fa-arrow-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="band h-100">
+          <h4 class="mb-2" data-i18n="zh">告诉我们你的需求</h4>
+          <h4 class="mb-2" data-i18n="en">Tell us what you need</h4>
+          <p class="mb-3" data-i18n="zh">获取一份适用于你的材料清单与时间评估。</p>
+          <p class="mb-3" data-i18n="en">Get a tailored checklist and realistic ETA.</p>
+          <a href="contact.html" class="btn btn-light" data-i18n="zh">立即联系</a>
+          <a href="contact.html" class="btn btn-light" data-i18n="en">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="mb-0">&copy; <span id="y"></span> <span data-i18n="zh">深圳环球学旅教育科技有限公司</span><span data-i18n="en">Global EDU Offer Limited</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
 </body>
 </html>
