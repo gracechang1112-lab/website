@@ -1,7 +1,0 @@
-Apostille / Consular Checklist (CN/EN)
-1) Passport scan / 护照扫描件
-2) Document to be authenticated / 待认证文件
-3) Purpose & destination / 用途与目的地
-4) Original or notarized copy? / 原件或公证件？
-5) Translation required? / 是否需要翻译？
-6) Return address & phone / 回寄地址与电话
