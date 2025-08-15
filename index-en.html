@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -70,11 +70,22 @@ nav ul > li > a { display:inline-block; padding:0.75rem 1rem; line-height:1.2; }
 .menu-dropdown li { display:block; }
 .menu-dropdown a { color:#fff !important; display:block; padding:.55rem 1rem; text-decoration:none; white-space:nowrap; }
 .nav-has-dropdown:hover > .menu-dropdown { display:block; }
+</style><style>
+/* unified nav */
+nav ul { list-style:none; margin:0; padding:0; }
+nav ul > li { display:inline-block; position:relative; vertical-align:middle; }
+nav ul > li > a { display:inline-block; padding:0.75rem 1rem; line-height:1.2; }
+.nav-has-dropdown > a::after { content:"\25BE"; margin-left:.35rem; font-size:.8em; }
+.menu-dropdown { display:none; position:absolute; top:100%; left:0; background:#333; color:#fff;
+  padding:.5rem 0; min-width:240px; border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,.15); }
+.menu-dropdown li { display:block; }
+.menu-dropdown a { color:#fff !important; display:block; padding:.55rem 1rem; text-decoration:none; white-space:nowrap; }
+.nav-has-dropdown:hover > .menu-dropdown { display:block; }
 </style></head>
 <body>
 <nav class="navbar navbar-expand-lg">
 <div class="container">
-<a class="navbar-brand" href="index.html">
+<a class="navbar-brand" href="index-en.html">
 <span data-i18n="zh">深圳环球学旅教育科技有限公司</span>
 <span data-i18n="en">Global EDU Offer Limited</span>
 </a>
@@ -83,12 +94,12 @@ nav ul > li > a { display:inline-block; padding:0.75rem 1rem; line-height:1.2; }
 </button>
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link active-link" data-file="index.html" data-i18n="zh" href="index.html">首页</a><a class="nav-link active-link" data-file="index.html" data-i18n="en" href="index.html">Home</a></li><li class="nav-has-dropdown"><a href="#">服务</a><ul class="menu-dropdown"><li><a href="nocertificate.html">外国人无犯罪记录证明</a></li><li><a href="degree-cn.html">学历验证及认证</a></li><li><a href="apostille-china-cn.html">文书海牙认证及领事认证</a></li></ul></li>
-<li class="nav-item"><a class="nav-link" data-file="cases.html" data-i18n="zh" href="cases.html">案例</a><a class="nav-link" data-file="cases.html" data-i18n="en" href="cases.html">Cases</a></li>
-<li class="nav-item"><a class="nav-link" data-file="about.html" data-i18n="zh" href="about.html">关于</a><a class="nav-link" data-file="about.html" data-i18n="en" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" data-file="faq.html" data-i18n="zh" href="faq.html">常见问题</a><a class="nav-link" data-file="faq.html" data-i18n="en" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" data-file="reviews.html" data-i18n="zh" href="reviews.html">客户评价</a><a class="nav-link" data-file="reviews.html" data-i18n="en" href="reviews.html">Reviews</a></li>
-<li class="nav-item"><a class="nav-link" data-file="contact.html" data-i18n="zh" href="contact.html">联系</a><a class="nav-link" data-file="contact.html" data-i18n="en" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link active-link" data-file="index.html" data-i18n="zh" href="index-en.html">首页</a><a class="nav-link active-link" data-file="index.html" data-i18n="en" href="index-en.html">Home</a></li><li class="nav-has-dropdown"><a href="#">Services</a><ul class="menu-dropdown"><li><a href="police-clearance.html">Police Clearance (PCC)</a></li><li><a href="degree-verification.html">Degree Verification</a></li><li><a href="apostille-china.html">Apostille &amp; Consular Legalization</a></li></ul></li>
+<li class="nav-item"><a class="nav-link" data-file="cases.html" data-i18n="zh" href="cases-en.html">案例</a><a class="nav-link" data-file="cases.html" data-i18n="en" href="cases-en.html">Cases</a></li>
+<li class="nav-item"><a class="nav-link" data-file="about.html" data-i18n="zh" href="about-en.html">关于</a><a class="nav-link" data-file="about.html" data-i18n="en" href="about-en.html">About</a></li>
+<li class="nav-item"><a class="nav-link" data-file="faq.html" data-i18n="zh" href="faq-en.html">常见问题</a><a class="nav-link" data-file="faq.html" data-i18n="en" href="faq-en.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" data-file="reviews.html" data-i18n="zh" href="reviews-en.html">客户评价</a><a class="nav-link" data-file="reviews.html" data-i18n="en" href="reviews-en.html">Reviews</a></li>
+<li class="nav-item"><a class="nav-link" data-file="contact.html" data-i18n="zh" href="contact-en.html">联系</a><a class="nav-link" data-file="contact.html" data-i18n="en" href="contact-en.html">Contact</a></li>
 </ul>
 <div class="ms-3">
 <button class="lang-btn" id="btn-zh">中文</button>
